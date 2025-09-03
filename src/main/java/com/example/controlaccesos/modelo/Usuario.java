@@ -13,6 +13,7 @@ public class Usuario {
     
     
     public Usuario() {
+        this.accesos = new ArrayList<Acceso>();
     }
 
     public Usuario(String userName, String nombre, String apellido, boolean habilitado) {
@@ -20,6 +21,7 @@ public class Usuario {
         this.nombre = nombre;
         this.apellido = apellido;
         this.habilitado = habilitado;
+        this.accesos = new ArrayList<Acceso>();
     }
 
     public String getUserName() {
@@ -71,6 +73,13 @@ public class Usuario {
     }
 
     public void agregarAcceso( Acceso acceso){
+
+        //if(this.accesos != null){
+        //    this.accesos.add(acceso);
+        //}else{
+        //    this.accesos = new ArrayList<Acceso>();
+        //    this.accesos.add(acceso);
+        //}
 
         this.accesos.add(acceso);
 

@@ -16,7 +16,14 @@ public class ControladorAccesos {
     
     @GetMapping("/todos")
     public List<Usuario> todosLosUsuarios() {
-        return serviciosUsuario.getUsuarios();
+        //serviciosUsuario.getInstancia().cargarDatosIniciales();
+        //serviciosUsuario.getInstancia().cargarJuegoPrueba2(serviciosUsuario);
+        return serviciosUsuario.getInstancia().getUsuarios();
+    }
+
+    @GetMapping("/carga")
+    public void cargarDatos(){
+        serviciosUsuario.getInstancia().cargarDatosIniciales();
     }
 
     @GetMapping("/lista")
