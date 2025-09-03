@@ -9,7 +9,12 @@ public class Usuario {
     private String apellido;
     private boolean habilitado;
     private ArrayList<Acceso> accesos;
+
     
+    
+    public Usuario() {
+    }
+
     public Usuario(String userName, String nombre, String apellido, boolean habilitado) {
         this.userName = userName;
         this.nombre = nombre;
@@ -57,12 +62,18 @@ public class Usuario {
         this.accesos = accesos;
     }
 
-    public int totalTiempoAccesos(){
+    public int tiempoTotalAcceso(){
         int tiempoTotal = 0;
         for (Acceso acceso : accesos) {
             tiempoTotal += acceso.diffTiempoAcceso();
         }
         return tiempoTotal;
+    }
+
+    public void agregarAcceso( Acceso acceso){
+
+        this.accesos.add(acceso);
+
     }
 
     

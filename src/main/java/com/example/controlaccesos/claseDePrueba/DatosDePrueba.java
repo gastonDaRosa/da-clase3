@@ -1,4 +1,4 @@
-package com.SolucionAccesoN4D.AccesoN4D.claseDePrueba;
+package com.example.controlaccesos.claseDePrueba;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
@@ -6,9 +6,8 @@ import java.util.Random;
 import java.util.Date;
 
 
-import com.SolucionAccesoN4D.AccesoN4D.modelo.Acceso;
-import com.SolucionAccesoN4D.AccesoN4D.modelo.Usuario;
-import com.SolucionAccesoN4D.AccesoN4D.servicios.ServiciosUsuario;
+import com.example.controlaccesos.modelo.*;
+import com.example.controlaccesos.servicios.ServiciosUsuario;
 
 
 
